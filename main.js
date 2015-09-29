@@ -22,12 +22,19 @@ var plus = document.querySelector('#plus');
 var equals = document.querySelector('#equals');
 var point = document.querySelector('#point');
 var clear = function (){
-var x;
 };
+var response2 = Number(answer.textContent);
+var response3 = Number(answer.textContent);
+
 var response= function () {
-  var response2 = this.textContent;
-  answer.textContent= response2;
+  
+    var response2 = this.textContent;
+    answer.textContent= response2;
+    console.log(response2);
 };
+  
+
+
 
 c.addEventListener('click', clear); //MAKE CLEAR Func
 answer.addEventListener('click', response); //Make response func
@@ -41,6 +48,12 @@ num3.addEventListener('click', response);
 num2.addEventListener('click', response);
 num1.addEventListener('click', response);
 num0.addEventListener('click', response);
+divide.addEventListener('click', response);
+times.addEventListener('click', response);
+minus.addEventListener('click', response);
+plus.addEventListener('click', response);
+equals.addEventListener('click', response);
+point.addEventListener('click', response);
 console.log('hello');
 
 
