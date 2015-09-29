@@ -1,0 +1,46 @@
+.clear{
+  width: 80px;
+  display: inline-block;
+}
+.window{
+  display: inline-block;
+  width: 410px;
+  background-color: green;
+  height: 50px;
+}
+.toprow{
+  width: 500px;
+  height: 100px;
+}
+.row789{
+  width: 500px;
+  height: 100px;
+}
+.row456{
+  width: 500px;
+  height: 100px;
+}
+.row123{
+  width: 500px;
+  height: 100px;
+}
+.row0{
+  width: 500px;
+  height: 100px;
+}
+.num {
+  display: inline-block;
+  width: 120px;
+  background-color: #65B357;
+}
+button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  height: 40px;
+}
+#answerwindow {
+  border: 1px solid black;
+}
