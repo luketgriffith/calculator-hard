@@ -23,17 +23,19 @@ var equals = document.querySelector('#equals');
 var point = document.querySelector('#point');
 var clear = function (){
 };
-var response2 = Number(answer.textContent);
-var response3 = Number(answer.textContent);
+// var response2 = Number(answer.textContent);
+// var response3 = Number(answer.textContent);
 
 var response= function () {
   
     var response2 = this.textContent;
-    answer.textContent= response2;
+    answer.textContent= response2 + answer.innerHTML;
     console.log(response2);
 };
   
-
+// var add = function(){
+//   response2 + 
+// }
 
 
 c.addEventListener('click', clear); //MAKE CLEAR Func
