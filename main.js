@@ -22,20 +22,23 @@ var plus = document.querySelector('#plus');
 var equals = document.querySelector('#equals');
 var point = document.querySelector('#point');
 var clear = function (){
+  answer.textContent = '';
 };
 // var response2 = Number(answer.textContent);
 // var response3 = Number(answer.textContent);
-
+var add= '+';
 var response= function () {
-  
     var response2 = this.textContent;
-    answer.textContent= response2 + answer.innerHTML;
+    answer.textContent= answer.innerHTML+response2;
     console.log(response2);
 };
-  
-// var add = function(){
-//   response2 + 
-// }
+var responseAdd = function(){
+  var response2= this.textContent;
+  var addNum = response2.textContent;
+  // console.log('yo dog');
+  answer.textContent= '';
+};
+
 
 
 c.addEventListener('click', clear); //MAKE CLEAR Func
@@ -53,7 +56,7 @@ num0.addEventListener('click', response);
 divide.addEventListener('click', response);
 times.addEventListener('click', response);
 minus.addEventListener('click', response);
-plus.addEventListener('click', response);
+plus.addEventListener('click', responseAdd);
 equals.addEventListener('click', response);
 point.addEventListener('click', response);
 console.log('hello');
