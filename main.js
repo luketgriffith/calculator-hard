@@ -25,32 +25,42 @@ var equalsBtn;
 var clear = function (){
   answer.textContent = '';
 };
-// var response2 = Number(answer.textContent);
-// var response3 = Number(answer.textContent);
-var add= '+';
+
+
 var response= function () {
     var response2 = this.textContent;
     answer.textContent= answer.innerHTML+response2;
     console.log(response2);
 };
 var responseAdd = function(){
-  var response2= this.textContent;
-  var addNum = response2.textContent;
-  // console.log('yo dog');
+  var num1 = answer.innerHTML;
   answer.textContent= '';
-  // var addNum2 = addNum.textContent;
+  var unit= this.innerHTML;
   answer.textContent= '';
-  var equalsBtn = function(){
-    var answerFinal = Number(addNum) + Number(addNum2);
-    answer.textContent = answerFinal;
-  }
+  var response= function () {
+    var num2 = this.textContent;
+    answer.textContent= answer.innerHTML+num2;}
+  answer.textContent = num1 + unit + num2;
+  };
+  // var equalsBtn = function(){
+  //   var answerFinal = Number(addNum) + Number(addNum2);
+  //   answer.textContent = answerFinal;
+  // }
   
-};
+
+//Things i tried that worked even less well
+// var response = function (){
+//   var equation= answer.innerHTML;
+//   if (equation = '=') {
+//     equation
+//   }
+//   answer.textContent = answer.innerHTML + response2;
+//   var num1= answer.textContent;
+// }
 
 
 
-
-c.addEventListener('click', clear); //MAKE CLEAR Func
+c.addEventListener('click', response); //MAKE CLEAR Func
 answer.addEventListener('click', response); //Make response func
 num7.addEventListener('click', response);
 num8.addEventListener('click', response);
@@ -66,7 +76,7 @@ divide.addEventListener('click', response);
 times.addEventListener('click', response);
 minus.addEventListener('click', response);
 plus.addEventListener('click', responseAdd);
-equals.addEventListener('click', equalsBtn);
+equals.addEventListener('click', response);
 point.addEventListener('click', response);
 console.log('hello');
 
