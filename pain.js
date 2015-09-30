@@ -1,7 +1,3 @@
-
-//event listener on each math function, returns to window
-//event listener on equals button, runs math function with both numbers
-//put elements in vars
 var c = document.querySelector('#clearbutton');
 var answer = document.querySelector('#answerwindow');
 var num7 = document.querySelector('#seven');
@@ -21,32 +17,24 @@ var minus = document.querySelector('#minus');
 var plus = document.querySelector('#plus');
 var equals = document.querySelector('#equals');
 var point = document.querySelector('#point');
-var equalsBtn;
+var responseAdd;
 var clear = function (){
   answer.textContent = '';
 };
-// var response2 = Number(answer.textContent);
-// var response3 = Number(answer.textContent);
-var add= '+';
+
 var response= function () {
     var response2 = this.textContent;
     answer.textContent= answer.innerHTML+response2;
+    var numHold= answer.textContent;
     console.log(response2);
-};
-var responseAdd = function(){
-  var response2= this.textContent;
-  var addNum = response2.textContent;
-  // console.log('yo dog');
-  answer.textContent= '';
-  // var addNum2 = addNum.textContent;
-  answer.textContent= '';
-  var equalsBtn = function(){
-    var answerFinal = Number(addNum) + Number(addNum2);
-    answer.textContent = answerFinal;
-  }
-  
-};
-
+    var nextClick = new Boolean (false);
+    if(meow){
+      console.log('Meow');
+      answer.textContent= '';
+      var numAdd = response.textContent;
+      answer.textContent= numHold+numAdd;
+    }
+  };
 
 
 
@@ -65,13 +53,9 @@ num0.addEventListener('click', response);
 divide.addEventListener('click', response);
 times.addEventListener('click', response);
 minus.addEventListener('click', response);
-plus.addEventListener('click', responseAdd);
-equals.addEventListener('click', equalsBtn);
+var meow = plus.addEventListener('click', responseAdd);
+equals.addEventListener('click', response);
 point.addEventListener('click', response);
 console.log('hello');
-
-
-
-
 
 
